@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
 	if (document.querySelector(".gallery-wrapper")) {
 		// Gallery Thumbs
@@ -149,14 +151,20 @@ window.addEventListener("resize", function () {
     galleryFull.update();
 });
 
-
+AOS.init({
+	duration: 1000, // Animation duration in milliseconds
+	once: true,     // Whether animation should happen only once
+	offset: 200,    // Offset from the top of the screen
+  });
 window.addEventListener('scroll', function () {
     const logo = document.querySelector('#logo'); // Target the logo image
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
+        navbar.classList.add('navbar-dark');
         logo.src = 'assets/imgs/logo_white_text.png'; // Change to light logo
     } else {
+		navbar.classList.remove('navbar-dark');
         navbar.classList.remove('scrolled');
         logo.src = 'assets/imgs/logo.png'; // Change back to original logo
     }
