@@ -732,3 +732,29 @@ a.btn-main:hover,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb,#7AA512, transparent 25%);
 }
+.imag-slider{
+  height: calc(100vh - 72px);
+}
+.imag-slider .carousel{
+  height: 100% !important;
+}
+.imag-slider .carousel .carousel-inner,.carousel-item{
+  height: 100%;
+}
+.imag-slider img{
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 50%;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  transform: translateY(50%);
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0,.6);
+}
