@@ -758,3 +758,33 @@ a.btn-main:hover,
   text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   background-color: rgba(0, 0, 0,.6);
 }
+
+.blog .card{
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.highlight {
+  font-style: italic;
+  color: #e74c3c;
+}
+.divider {
+  margin: 20px 0;
+  border-top: 1px solid #ccc;
+}
+.cta {
+  text-align: center;
+  margin-top: 20px;
+}
+.cta a {
+  text-decoration: none;
+  background: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.cta a:hover {
+  background: #2980b9;
+}
